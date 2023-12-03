@@ -1,0 +1,26 @@
+#global_header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--bg-dark-color);
+    color: var(--txt-light-color);
+    border-bottom: 1px solid white;
+    position: sticky;
+    top: 0;
+    nav {
+        height: 100%;
+        margin: 0 auto;
+    }
+    ul {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        li {
+          a{
+            font-size: 40px;
+          }
+            
+        }
+    }
+}
