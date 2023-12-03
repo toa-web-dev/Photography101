@@ -1,4 +1,21 @@
 :root {
+  --bg-dark-color: black;
+  --bg-light-color: white;
+  --txt-dark-color: black;
+  --txt-light-color: white;
+
+}
+
+body{
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  
+}
+
+
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -11,13 +28,14 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: white;
   text-decoration: inherit;
 }
+/* 
 a:hover {
   color: #535bf2;
 }
@@ -65,4 +83,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
