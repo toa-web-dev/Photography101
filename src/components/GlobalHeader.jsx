@@ -11,7 +11,7 @@ export function GlobalHeader() {
         const handleScroll = () => {
             const currentScrollPosition = Math.trunc(window.scrollY);
 
-            const isScrollingDown = currentScrollPosition >= prevScrollPosition;
+            const isScrollingDown = currentScrollPosition > prevScrollPosition;
 
             setHeadereSlideUp(isScrollingDown ? true : false);
 
