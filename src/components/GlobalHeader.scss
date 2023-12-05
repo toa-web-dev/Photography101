@@ -1,31 +1,32 @@
 .slideUp {
-    transform: translateY(-85%);
+  transform: translateY(-85%);
 }
 
 #global_header {
-    width: 100%;
-    height: 100px;
-    background-color: var(--bg-dark-color);
-    color: var(--txt-light-color);
-    border-bottom: 1px solid white;
-    position: fixed;
-    transition: transform 0.5s;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  transition: transform 0.5s;
+  background-color: var(--bg-dark-color);
+  border-bottom: 1px solid white;
+  color: var(--txt-light-color);
     &:hover {
-        transform: translateY(0);
+      transform: translateY(0);
     }
     nav {
-        height: 100%;
-        margin: 0 auto;
+      height: 100%;
+      margin: 0 auto;
     }
     ul {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      height: 100%;
         li {
             a {
-                font-size: 40px;
+              font-size: 40px;
             }
         }
     }
