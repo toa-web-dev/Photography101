@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./GlobalHeader.scss";
 
-const MENU = ["Home", "Dictionary", "Advice"];
+const MENU = ["home", "term", "advice"];
 
 export function GlobalHeader() {
     const [headerSlideUp, setHeadereSlideUp] = useState(false);
@@ -25,12 +26,14 @@ export function GlobalHeader() {
         };
     }, []);
 
-    const CreateLink = ({ props }) => {
+    const CreateLink = () => {
         return (
             <ul>
-                {props.map((el, idx) => (
+                {MENU.map((el, idx) => (
                     <li key={idx}>
-                        <a href="#">{el}</a>
+                        <Link to={el === "home" ? "/" : `/${el}`}>
+                            {el.toUpperCase()}
+                        </Link>
                     </li>
                 ))}
             </ul>
@@ -39,7 +42,7 @@ export function GlobalHeader() {
     return (
         <header id="global_header" className={headerSlideUp ? "slideUp" : ""}>
             <nav>
-                <CreateLink props={MENU} />
+                <CreateLink />
             </nav>
         </header>
     );
