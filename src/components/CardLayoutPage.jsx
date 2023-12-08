@@ -10,7 +10,7 @@ export function CardLayoutPage(props) {
     };
     return (
         <>
-            <section
+            <div
                 className={`${styles.container} ${styles.deactive}`}
                 onClick={handleClick}
                 onAnimationEnd={() => {
@@ -18,7 +18,7 @@ export function CardLayoutPage(props) {
                 }}
             >
                 {props.children}
-            </section>
+            </div>
         </>
     );
 }

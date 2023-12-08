@@ -23,8 +23,10 @@ export function Homepage() {
     };
     const CreateCardLayout = () => {
         return (
-            <div className={styles.home_top_container}>
-                <div className={styles.card_layout_container}>
+            <div className={styles.card_container}>
+                <button className={styles.card_prev_btn}>{"<"}</button>
+                <button className={styles.card_next_btn}>{">"}</button>
+                <div className={styles.card_item}>
                     {pageArray.map((page, idx) => (
                         <CardLayoutPage key={idx} name={page.name}>
                             {page.component}

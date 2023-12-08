@@ -23,13 +23,17 @@
 }
 
 .container {
-    border: 4px solid var(--bg-light-color);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     scale: 0.4;
     overflow: hidden;
     background-color: var(--bg-light-color);
     border-radius: 12px;
+    &:hover{
+        z-index: 999;
+        transition: scale 0.4s;
+        
+    }
     &:nth-of-type(2) {
         transform: translate(-10%, 10%);
     }

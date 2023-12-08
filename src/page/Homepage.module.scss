@@ -1,20 +1,24 @@
 .section{
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  background-color: beige;
     &:nth-of-type(2n){
       background-color: var(--bg-light-color);
     }
 }
 
 
-.home_top_container{
-  background-color: var(--bg-dark-color);
+.card_container{
+  margin: 0 auto;
+  width: 1000px;
+  height: 1000px;
+  background-color: red;
 }
 
-.card_layout_container{
+.card_item{
   position: relative;
-  width: 500px;
-  height: 90vh;
+  width: inherit;
+  height: inherit;
 }
 
 .home_nav{
